@@ -22,9 +22,9 @@ public class DatabaseConnectionManager {
         //password = "pscale_pw_80ddEXgIbUVny5E2TCrOdhvUil8uzngZ3lImcPLH46c";
 
 
-        hostname = System.getenv("host");
-        username = System.getenv("user");
-        password = System.getenv("pass");
+        hostname = System.getenv("jar_host");
+        username = System.getenv("jar_user");
+        password = System.getenv("jar_pass");
 
         try {
             conn = DriverManager.getConnection(hostname, username, password);
