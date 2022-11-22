@@ -17,14 +17,14 @@ public class DatabaseConnectionManager {
             return conn;
         }
 
-        hostname = "jdbc:mysql://eu-central.connect.psdb.cloud/clbotest";
-        username = "k88vwmzb25vweuyspztc";
-        password = "pscale_pw_80ddEXgIbUVny5E2TCrOdhvUil8uzngZ3lImcPLH46c";
+        //hostname = "jdbc:mysql://eu-central.connect.psdb.cloud/clbotest";
+        //username = "k88vwmzb25vweuyspztc";
+        //password = "pscale_pw_80ddEXgIbUVny5E2TCrOdhvUil8uzngZ3lImcPLH46c";
 
 
-        //hostname = System.getenv("host");
-        //username = System.getenv("user");
-        //password = System.getenv("pass");
+        hostname = System.getenv("host");
+        username = System.getenv("user");
+        password = System.getenv("pass");
 
         try {
             conn = DriverManager.getConnection(hostname, username, password);
